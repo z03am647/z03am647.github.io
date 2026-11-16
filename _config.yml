@@ -1,0 +1,21 @@
+# Site settings
+title: z03am's Blog
+description: GitHub Pages + Jekyll で作ったブログ
+baseurl: ""          # <username>.github.io なら ""、/blog なら "/blog"
+url: ""
+
+# Build settings
+timezone: Asia/Tokyo
+markdown: kramdown
+permalink: /:year-:month-:day-:title/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+nav:
+  - title: home
+    path: /
+  - title: about
+    path: /about/

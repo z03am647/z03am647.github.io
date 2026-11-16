@@ -1,0 +1,58 @@
+:root {
+  --fg: #1a1a1a;
+  --muted: #777;
+  --bg: #fdfdfb;
+  --accent: #0b6e4f;
+  --border: #e5e5e0;
+  --code-bg: #f4f4f0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", system-ui, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+  line-height: 1.75;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header {
+  max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 1rem;
+  display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;
+}
+.site-title { font-weight: 700; font-size: 1.2rem; color: var(--fg); }
+.site-nav a { margin-left: 1.25rem; color: var(--muted); }
+.site-nav a:hover { color: var(--accent); }
+
+.site-main { max-width: 720px; margin: 0 auto; padding: 1rem 1.25rem 3rem; }
+
+.post-item { margin-bottom: 2.25rem; }
+.post-item time { color: var(--muted); font-size: .85rem; }
+.post-item h2 { margin: .2rem 0 .3rem; font-size: 1.3rem; }
+.post-item .excerpt { margin: 0; color: var(--muted); font-size: .95rem; }
+
+.post-header h1 { font-size: 1.7rem; margin-bottom: .25rem; }
+.post-date { color: var(--muted); font-size: .85rem; }
+.post-content { margin-top: 1.5rem; }
+.post-content h2 { margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: .3rem; }
+.post-content img { max-width: 100%; }
+.post-content pre, .post-content code {
+  background: var(--code-bg);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: .9rem;
+}
+.post-content pre { padding: .9rem 1rem; overflow-x: auto; border-radius: 6px; }
+.post-content code { padding: .15rem .35rem; border-radius: 4px; }
+.post-content pre code { padding: 0; background: none; }
+.post-content blockquote {
+  margin: 1.25rem 0; padding: .5rem 1rem;
+  border-left: 3px solid var(--accent); color: #444;
+}
+
+.post-nav { display: flex; justify-content: space-between; margin-top: 3rem; gap: 1rem; }
+
+.site-footer {
+  max-width: 720px; margin: 0 auto; padding: 1rem 1.25rem 2rem;
+  color: var(--muted); font-size: .85rem; border-top: 1px solid var(--border);
+}
