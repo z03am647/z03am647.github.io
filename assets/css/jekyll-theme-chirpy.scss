@@ -1,0 +1,21 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Allow the sidebar tagline (site-subtitle) to wrap beyond the theme's
+   fixed 3rem height so longer text is not clipped. */
+#sidebar .site-subtitle {
+  height: auto;
+}
