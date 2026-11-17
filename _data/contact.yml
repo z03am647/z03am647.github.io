@@ -13,6 +13,10 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+
+- type: note
+  icon: "fas fa-pen-nib"
+  url: 'https://note.com/rumble_owl2814'
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
